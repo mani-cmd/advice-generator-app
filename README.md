@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [Github](https://github.com/mani-cmd/advice-generator-app)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [Vercel](https://quote-generator-mani-cmd.vercel.app/)
 
 ## My process
 
