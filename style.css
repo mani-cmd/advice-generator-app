@@ -1,3 +1,17 @@
+:root{
+    
+--lightCyan: hsl(193, 38%, 86%);
+--neonGreen: hsl(150, 100%, 66%);
+
+
+--grayishBlue: hsl(217, 19%, 38%);
+--darkGrayishBlue: hsl(217, 19%, 24%);
+--darkBlue: hsl(218, 23%, 16%);
+
+--fontSize: 28px;
+
+}
+
 *,*::before, *::after{
     padding: 0;
     margin: 0;
@@ -7,5 +21,91 @@
 body{
     font-family: 'Manrope', sans-serif;
     box-sizing: border-box;
+    background-color: var(--darkBlue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.main-container{
+    width: 90%;
+    max-width: 450px;
+    background-color: var(--darkGrayishBlue);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.cyn{
+    font-size: 15px;
+    text-align: center;
+    color: var(--neonGreen);
+    padding: 2rem 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.advice{
+    text-align: center;
+    font-size: 28px;
+    color: var(--lightCyan);
+    padding-inline: 2.5rem;
+}
+
+.divider{
+    margin-block: 1.5rem;
+    padding-inline: 3rem;
+
+}
+.divider.mobile{
+    display: none;
+}
+.divider.desktop{
+    display: block;
+}
+.btn{
+    position: relative;
+    padding-block: 1rem;
+}
+
+.new{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%) translateY(-20%);
+    display: grid;
+    place-content: center;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: var(--neonGreen);
+    cursor: pointer;
+}
+
+.new:hover{
+    box-shadow: 0px 0px 26px 6px hsla(150, 100%, 66%, 65%);
+}
+
+@media screen and (max-width: 375px) {
+    .divider.mobile{
+        display: block;
+    }
+    .divider.desktop{
+        display: none;
+    }
+    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+.attribution a {
+    color: hsl(228, 45%, 64%);
 }

@@ -19,31 +19,39 @@
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
             rel="stylesheet"
         />
-
-        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <style>
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
         <link rel="stylesheet" href="./style.css" />
+        <script defer src="./script.js"></script>
     </head>
     <body>
-        Advice #<!-- Advice ID goes here -->
-        <span class="advice" id="advise"></span>
-        "<!-- Advice text goes here -->"
+        <div class="main-container">
+            <p class="cyn">Advice <span class="adviceNo"> -2314 </span></p>
+            <p class="advice" id="advise">
+                If you see this specific quote your internet speed is low
+            </p>
+            <img
+                class="divider desktop"
+                src="./images/pattern-divider-desktop.svg"
+                alt="divider"
+            />
+            <img
+                class="divider mobile"
+                src="./images/pattern-divider-mobile.svg"
+                alt="divider"
+            />
+            <div class="btn">
+                <button class="new">
+                    <img src="./images/icon-dice.svg" alt="	Random Button" />
+                </button>
+            </div>
+        </div>
 
-        <div class="attribution">
+        <!-- <div class="attribution">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
             >. Coded by <a href="#">Your Name Here</a>.
-        </div>
+        </div> -->
     </body>
 </html>
